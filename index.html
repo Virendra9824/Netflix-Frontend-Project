@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .accordion-item.active .accordion-icon {
+            transform: rotate(90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--                        ************ HOME ************                          -->
+    <section class="w-[100%] lg:h-[100vh] h-[auto]  bg-[url('images/bg-banner.jpg')] bg-cover bg-center ">
+        <div class="bg-[rgba(0,0,0,0.6)] w-[100%] lg:h-[100vh] h-[auto]">
+
+            <div class="max-w-[1170px] px-[60px] mx-auto">
+                <div class="grid grid-cols-[30%_auto] pt-[15px]">
+                    <div>
+                        <img src="images/logo1.png" width="160px" alt="">
+                    </div>
+
+                    <div class="flex items-center justify-end gap-[10px] ">
+                        <div>
+                            <select name=""
+                                class="bg-[transparent] h-[30px] px-[15px] text-[white] border-white border-[1px] rounded"
+                                id="">
+                                <option value="">English</option>
+                                <option value="">Hindi</option>
+                            </select>
+                        </div>
+                        <div class="bg-[red] text-[white] px-[12px] py-[3px] rounded">Sign In</div>
+                    </div>
+                </div>
+
+                <div class="pt-[222px] pb-[60px]">
+                    <h1 class="text-white text-[40px]  md:text-[50px] font-bold text-center text-center">
+                        Unlimited movies, TV shows and more
+                        <h3 class="text-white text-[22px] text-center pt-[30px]">Watch anywhere. Cancel anytime.</h3>
+                        <h3 class="text-white text-[22px] text-center pt-[30px]">Ready to watch? Enter your email to
+                            create or restart your membership.</h3>
+
+                    </h1>
+
+                    <div
+                        class="grid  md:grid-cols-[70%_auto]  grid-cols-1 max-w-[700px] mx-auto gap-[15px] mt-[10px] px-[30px]">
+                        <div><input
+                                class="bg-[rgba(0,0,0,0.4)] h-[50px] w-[100%] border-[1px] border-white text-white px-[10px] rounded"
+                                placeholder="Email address" type="text"></div>
+
+                        <div class=" sm:flex sm:justify-center  md:w-[100%]"><button
+                                class="w-[100%] sm:w-[50%]  md:w-[100%] h-[50px] rounded text-white bg-[red] text-[17px] sm:text-[22px] font-semibold   duration-300">Get
+                                Started</button></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--                        ************ ENJOY TV ************                          -->
+    <section class="bg-[black]  py-[80px] border-t-[8px] border-[#808080]">
+        <div class="max-w-[1100px] mx-auto text-white">
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] items-center px-[30px]">
+                <div class="text-center sm:text-left">
+                    <h1 class="text-[40px]  lg:text-[54px] font-bold">Enjoy on your TV</h1>
+                    <p class="text-[20px]  lg:text-[27px]">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players
+                        and more.</p>
+                </div>
+
+                <div class="w-[100%] relative">
+                    <img class="relative z-[100]" src="images/tv.png" alt="">
+                    <video autoplay muted loop class="absolute top-[20%] w-[80%] left-[10%]">
+                        <source src="images/video-tv-in-0819.m4v" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--                        ************ DOWNLOAD ************                          -->
+    <section class="bg-[black]  py-[80px] border-t-[8px] border-[#808080]">
+        <div class="max-w-[1100px] mx-auto text-white">
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] items-center px-[30px]">
+                <div class="w-[100%] relative group sm:order-1 order-2">
+                    <img class="" src="images/mobile-0819.jpg" alt="">
+                    <div
+                        class=" group-hover:scale-110  duration-300  absolute w-[70%] left-[15%] border-white border-[1px] bottom-[-20px] bg-black rounded-[15px]">
+                        <div class="grid grid-cols-[20%_50%_auto] gap-[10px] p-[10px] items-center">
+                            <div>
+                                <img src="images/boxshot.png" class="h-[80px]" alt="">
+                            </div>
+                            <div>
+                                Stranger Things Downloading...
+                            </div>
+                            <div>
+                                <img src="images/download-icon.gif" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center sm:text-left  sm:order-2 order-1">
+                    <h1 class="text-[40px]  lg:text-[54px] font-bold ">Download your shows to watch offline</h1>
+                    <p class="text-[20px]  lg:text-[27px]">Save your favourites easily and always have something to
+                        watch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--                 ************ WATCH EVERYWHERE ************                          -->
+    <section class="bg-[black]  py-[80px] border-t-[8px] border-[#808080]">
+        <div class="max-w-[1100px] mx-auto text-white">
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] items-center px-[30px]">
+                <div class="text-center sm:text-left">
+                    <h1 class="text-[40px]  lg:text-[54px] font-bold">Watch everywhere</h1>
+                    <p class="text-[20px]  lg:text-[27px]">Stream unlimited movies and TV shows on your phone, tablet,
+                        laptop, and TV.
+                    </p>
+                </div>
+
+                <div class="w-[100%] relative">
+                    <img class="relative z-[100]" src="images/mac.png" alt="">
+                    <video autoplay muted loop class="absolute top-[9%] w-[65%] left-[17%]">
+                        <source src="images/hero.m4v" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--                 ************ KIDS ************                          -->
+    <section class="bg-[black]  py-[80px] border-t-[8px] border-[#808080]">
+        <div class="max-w-[1100px] mx-auto text-white">
+            <div class="   grid sm:grid-cols-2 grid-cols-1 gap-[30px] items-center px-[30px]">
+                <div class="w-[100%] relative sm:order-1 order-2 ">
+                    <img class="" src="images/kids.png" alt="">
+
+                </div>
+
+                <div class="text-center sm:text-left  sm:order-2 order-1">
+                    <h1 class="text-[40px]  lg:text-[54px] font-bold">Create profiles for kids</h1>
+                    <p class="text-[20px]  lg:text-[27px] ">Send children on adventures with their favourite
+                        characters in a space made just for them—free with your membership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--                 ************ FAQ ************                          -->
+    <section class="bg-[black] text-black w-full   py-[80px] border-t-[8px] border-[#808080]">
+        <h1 class="text-[30px]  sm:text-[40px]  lg:text-[54px] text-center text-white mb-8 font-bold">Frequently Asked
+            Questions
+        </h1>
+        <div class=" flex items-center justify-center px-[100px] md:px-[150px]">
+            <div class="accordion w-[full]">
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        What is Netflix?<span class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices. <br>
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added
+                            every week!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        How much does Netflix cost?<span
+                            class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is flexible. There are no annoying contracts and no commitments. You can easily
+                            cancel
+                            your account online in two clicks. There are no cancellation fees – start or stop your
+                            account
+                            anytime.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        What is Netflix?<span class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices. <br>
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added
+                            every week!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        How much does Netflix cost?<span
+                            class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is flexible. There are no annoying contracts and no commitments. You can easily
+                            cancel
+                            your account online in two clicks. There are no cancellation fees – start or stop your
+                            account
+                            anytime.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        What is Netflix?<span class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices. <br>
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added
+                            every week!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item  mb-2">
+                    <div
+                        class="accordion-header text-white  cursor-pointer flex items-center justify-between p-3 font-inter font-medium bg-[#303030] duration-200 ease-out text-2xl">
+                        How much does Netflix cost?<span
+                            class="accordion-icon inline-block rotate-0 duration-200 ease-out"><i
+                                class="fa-solid fa-chevron-down accordion-icon"></i></span>
+                    </div>
+                    <div class="accordion-content bg-gray-100 h-0 overflow-hidden duration-200 ease-out">
+                        <div class="p-3 text-lg text-white bg-[#303030] border-t-4  border-t-[black]">
+                            Netflix is flexible. There are no annoying contracts and no commitments. You can easily
+                            cancel
+                            your account online in two clicks. There are no cancellation fees – start or stop your
+                            account
+                            anytime.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div
+            class="grid  md:grid-cols-[60%_auto]  grid-cols-1 max-w-[700px] mx-auto gap-[15px] mt-[40px] px-[100px] md:px-[150px]">
+            <div><input
+                    class="bg-[rgba(0,0,0,0.4)] h-[50px] w-[100%] border-[1px] border-white text-white px-[10px] rounded"
+                    placeholder="Email address" type="text"></div>
+
+            <div class=" sm:flex sm:justify-center  w-[100%]"><button
+                    class="w-[100%] sm:w-[50%]  md:w-[100%] h-[50px] rounded text-white bg-[red] text-[17px] sm:text-[22px] font-semibold   duration-300">Get
+                    Started</button></div>
+        </div>
+    </section>
+
+
+
+    <!--                 ************ FOOTER ************                          -->
+    <section class="bg-[black] text-white    py-[80px] border-t-[8px] border-[#808080]">
+        <h3 class=" text-center   w-[100%]">Questions? <span class="underline">Call 000-800-919-1694</span> </h3>
+        <div class="flex justify-center py-[50px] px-[150px] w-[100%]">
+            <div class="f1 w-[28%] text-left ">
+                <a class="block mb-[15px] text-[16px]" href="">FAQ</a>
+                <a class="block mb-[15px] text-[16px]" href="">Help Centre</a>
+                <a class="block mb-[15px] text-[16px]" href="">Account</a>
+                <a class="block mb-[15px] text-[16px]" href="">Media Centre</a>
+                <a class="block mb-[15px] text-[16px]" href="">Investor Relations</a>
+            </div>
+
+            <div class="f1 w-[28%] text-left ">
+                <a class="block mb-[15px] text-[16px]" href="">Jobs</a>
+                <a class="block mb-[15px] text-[16px]" href="">Ways to Watch</a>
+                <a class="block mb-[15px] text-[16px]" href="">Terms of Use</a>
+                <a class="block mb-[15px] text-[16px]" href="">Privacy</a>
+                <a class="block mb-[15px] text-[16px]" href="">Cookie Preferences</a>
+            </div>
+
+            <div class="f1 w-[28%] text-left ">
+                <a class="block mb-[15px] text-[16px]" href="">Corporate Information</a>
+                <a class="block mb-[15px] text-[16px]" href="">Contact Us</a>
+                <a class="block mb-[15px] text-[16px]" href="">Speed Test</a>
+                <a class="block mb-[15px] text-[16px]" href="">Legal Notices</a>
+                <a class="block mb-[15px] text-[16px]" href="">Only on Netflix</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+
+
+<script>
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach((item) => {
+        const header = item.querySelector(".accordion-header");
+        const content = item.querySelector(".accordion-content");
+
+        header.addEventListener("click", () => {
+            // close other items
+            accordionItems.forEach((otherItem) => {
+                if (otherItem !== item && otherItem.classList.contains("active")) {
+                    otherItem.classList.remove("active");
+                    otherItem.querySelector(".accordion-content").style.height = 0;
+                }
+            });
+
+            item.classList.toggle("active");
+
+            if (item.classList.contains("active")) {
+                content.style.height = `${content.scrollHeight}px`;
+            } else {
+                content.style.height = 0;
+            }
+        });
+    });
+</script>
+
+</html>
