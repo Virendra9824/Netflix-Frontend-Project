@@ -9,7 +9,8 @@ This project is a frontend implementation of a Netflix-like streaming platform. 
 
 ## Live Demo
 
-Check out the live demo [here]([https://your-live-demo-url.com](https://virendra9824.github.io/Netflix-Frontend-Project/)).
+Check out the live demo [here](https://virendra9824.github.io/Netflix-Frontend-Project/).
+
 
 
 ## Technologies Used
