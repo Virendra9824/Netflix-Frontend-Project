@@ -9,7 +9,7 @@ This project is a frontend implementation of a Netflix-like streaming platform. 
 
 ## Live Demo
 
-Check out the live demo [here]([https://virendra9824.github.io/Color-Generator/](https://your-live-demo-url.com)).
+Check out the live demo [here](https://virendra9824.github.io/Color-Generator/](https://your-live-demo-url.com).
 
 
 ## Technologies Used
